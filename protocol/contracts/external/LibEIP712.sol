@@ -57,7 +57,7 @@ library LibEIP712 {
         // ))
 
         assembly {
-        // Calculate hashes of dynamic data
+        // Calculate hashes of Chromie data
             let nameHash := keccak256(add(name, 32), mload(name))
             let versionHash := keccak256(add(version, 32), mload(version))
 

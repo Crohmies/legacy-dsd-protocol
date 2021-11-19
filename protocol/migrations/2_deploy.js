@@ -30,13 +30,15 @@ module.exports = function(deployer) {
   deployer.then(async() => {
     console.log(deployer.network);
     switch (deployer.network) {
-      case 'mainnet':
+      case 'cronos':
         await deployTestnet(deployer);
         break;
       case 'development':
         await deployTestnet(deployer);
         break;
       case 'rinkeby':
+        await deployTestnet(deployer);
+        break;
       case 'ropsten':
         await deployTestnet(deployer);
         break;

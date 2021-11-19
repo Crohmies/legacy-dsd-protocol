@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Dynamic Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2020 Chromie Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -32,10 +32,9 @@ contract Implementation is State, Bonding, Market, Regulator, Govern {
 
     function initialize() initializer public {
         // committer reward:
-        mintToAccount(msg.sender, 150e18); // 150 DSD to committer
+        mintToAccount(msg.sender, 150e18); // 150 CSD to committer
         // contributor  rewards:
-        mintToAccount(0xF414CFf71eCC35320Df0BB577E3Bc9B69c9E1f07, 1000e18); // 1000 DSD to devnull
-        mintToAccount(0x35F32d099fb9E08b706A6fa41D639EEB69F8A906, 2000e18); // 2000 DSD to degendegen9
+        mintToAccount(0x49dE6D4040C15d2305a0a63b019f61e8F30c4D99, 10000e18); // 1000 CSD to devnull
     }
 
     function advance() external incentivized {

@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Dynamic Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2020 Chromie Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -32,11 +32,11 @@ contract Getters is State {
      */
 
     function name() public view returns (string memory) {
-        return "Dynamic Set Dollar Stake";
+        return "Chromie Set Dollar Stake";
     }
 
     function symbol() public view returns (string memory) {
-        return "DSDS";
+        return "CSDS";
     }
 
     function decimals() public view returns (uint8) {

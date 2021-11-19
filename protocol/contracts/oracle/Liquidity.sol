@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Dynamic Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2020 Chromie Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import "../Constants.sol";
 import "./PoolGetters.sol";
 
 contract Liquidity is PoolGetters {
-    address private constant UNISWAP_FACTORY = address(0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f);
+    address private constant UNISWAP_FACTORY = address(0xe9c29cB475C0ADe80bE0319B74AD112F1e80058F);
 
     function addLiquidity(uint256 dollarAmount) internal returns (uint256, uint256) {
         (address dollar, address usdc) = (address(dollar()), usdc());
